@@ -25,3 +25,15 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Increase history size
 HISTSIZE=10000
 HISTFILESIZE=10000
+
+# Ignore duplicate history lines
+HISTCONTROL=ignoredups
+
+# Ensure history is always appended to.
+shopt -s histappend
+
+# Updates windowsize after each command
+shopt -s checkwinsize
+
+# Use Xmodmap configuration
+xmodmap ~/.xmodmaprc
