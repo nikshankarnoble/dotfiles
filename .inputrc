@@ -1,0 +1,10 @@
+# Show completions on first tab.
+set show-all-if-ambiguous on
+
+# Use CTRL left/right to jump words.
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
+
+# Partial history search with Up/Down arrows.
+"\e[A": history-search-backward
+"\e[B": history-search-forward
